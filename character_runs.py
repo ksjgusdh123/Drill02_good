@@ -27,17 +27,18 @@ def run_rectangle():
     print("RECTANGLE")
 
     # bottom line
-  #  for x in range(50, 750+1, 10):
-  #     render_all(x,90)
-  
+    for x in range(50, 750+1, 10):
+        render_all(x,90)
+
+     #up line
+    for y in range(90, 550 + 1, 10):
+       render_all(750, y)
+    
     # top line
-    #for x in range(750, 50 - 1, -10):
-     #  render_all(x,550)
+    for x in range(750, 50 - 1, -10):
+       render_all(x,550)
 
-    #up line
-    #for y in range(90, 550 + 1, 10):
-    #   render_all(750, y)
-
+    #down line
     for y in range(550, 90 - 1, -10):
         render_all(50, y)
     pass
